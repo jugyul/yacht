@@ -1,0 +1,30 @@
+body {
+  background-color: #f6f9fc;
+  padding: 50px;
+  display : flex;
+}
+
+#dices .savedDices {
+  display : flex;
+  margin-bottom: 50px;
+}
+
+#dices .savedDices .savedDice {
+  border : 1px solid black;
+  padding: 15px;
+  margin: 3px;
+}
+
+
+
+#dices .randomDices {
+  display: flex;
+}
+
+
+#dices .randomDices .randomDice {
+  border: 1px solid black;
+  padding : 15px;
+  margin : 3px;
+}
+
