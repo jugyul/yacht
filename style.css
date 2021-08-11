@@ -17,7 +17,7 @@ body {
 
 
 
-#dices .randomDices {
+#dices .randomDices .trialOfRolling {
   display: flex;
 }
 
@@ -28,3 +28,6 @@ body {
   margin : 3px;
 }
 
+.hidden {
+  display: none;
+}
