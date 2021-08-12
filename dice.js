@@ -2,7 +2,6 @@ const rollBtn = document.getElementById("rollBtn")
 let savedDiceValues =[]
 let rollBtnClickCount=0
 
-
 function createRandomDice(value, newTryOfRolling){
   const randomDice = document.createElement("div")
   randomDice.classList.add("randomDice")
@@ -79,8 +78,5 @@ function onRollBtnClick(){
   }
 
 }
-
-
-
 
 rollBtn.addEventListener("click", onRollBtnClick)

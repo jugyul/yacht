@@ -1,29 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>yacht</title>
-  <link rel="stylesheet" href="dicestyle.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>yacht</title>
+	<link rel="stylesheet" href="dicestyle.css">
+	<link rel="stylesheet" href="tablestyle.css">
 </head>
+
 <body>
+	<div>
+		<table border="1px" bgcolor="white">
+			<tr align="center">
+				<td>Turn</td>
+				<td rowspan="3">player1</td>
+				<td rowspan="3">player2</td>
+			</tr>
+			<tr>
+				<th>1/12</th>
+			</tr>
+			<tr>
+				<td align="center">Categories</td>
+			</tr>
+			<tr>
+				<td>Aces</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Deuces</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Threes</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Fours</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Fives</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Sixes</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="R10">
+				<td id="R10C1" align="center" height="20px">Subtotal</td>
+				<td id="R10C2"></td>
+				<td id="R10C3"></td>
+			</tr>
+			<tr id="R11">
+				<td id="R11C1">+35 Bouns</td>
+				<td id="R11C2"></td>
+				<td id="R11C3"></td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td>Choice</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td>4 of a Kind</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Full House</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>S.Straight</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>L.Straight</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Yacht</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td id="R18C1">Total</td>
+				<td id="R18C2"></td>
+				<td id="R18C3"></td>
+			</tr>
+		</table>
 
+	</div>
 
-  <div id="dices">
-    <div class="dicesform">
-      <div class="savedDices">
-      </div>
-    </div>
+	<div id="dices">
+		<div class="dicesform">
+			<div class="savedDices">
+			</div>
+		</div>
 
-    <div class="dicesform">
-      <div class="randomDices">
-        <div class="trialOfRolling">
-        </div>
-      </div>
-    </div>
-    <button id="rollBtn">roll</button>
+		<div class="dicesform">
+			<div class="randomDices">
+				<div class="trialOfRolling">
+				</div>
+			</div>
+		</div>
+		<button id="rollBtn">roll</button>
   </div>
 
 <script src="dice.js"></script>
+<script src="table.js"></script>
 </body>
 </html>
