@@ -16,8 +16,29 @@
   background-color: silver;
 }
 
-
-.turn{
-  background-color: ivory;
+.turn_color {
+  background-color: palegoldenrod;
 }
 
+.turn_color:hover{
+  background-color: sandybrown
+}
+
+
+.fakevalue{
+  color: grey;
+
+}
+
+.fixed{
+  display: none;
+}
+
+.check{
+  transition:all 1000ms;
+  color: silver;
+}
+
+.turn {
+  width:20px;
+}

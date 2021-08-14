@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<div>
+	<div id="tableForm">
 		<table border="1px" bgcolor="white">
 			<tr align="center">
 				<td>Turn</td>
@@ -25,87 +25,163 @@
 			</tr>
 			<tr>
 				<td>Aces</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+					<span class="subvalue fakevalue turn" id="R4C2"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="subvalue fakevalue hidden" id="R4C3"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td>Deuces</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="subvalue fakevalue turn" id="R5C2"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="subvalue fakevalue hidden" id="R5C3"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td>Threes</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="subvalue fakevalue turn" id="R6C2"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="subvalue fakevalue hidden" id="R6C3"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td>Fours</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="subvalue fakevalue turn" id="R7C2"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="subvalue fakevalue hidden" id="R7C3"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td>Fives</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="subvalue fakevalue turn" id="R8C2"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="subvalue fakevalue hidden" id="R8C3"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td>Sixes</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="subvalue fakevalue turn" id="R9C2"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="subvalue fakevalue hidden" id="R9C3"></span>
+          <span class="subvalue realvalue"></span>
+        </td>
 			</tr>
 			<tr id="R10">
 				<td id="R10C1" align="center" height="20px">Subtotal</td>
-				<td id="R10C2"></td>
-				<td id="R10C3"></td>
+				<td align="center" class="subtotal_turn subtotal" id="R10C2">0</td>
+				<td align="center" class="subtotal" id="R10C3">0</td>
 			</tr>
 			<tr id="R11">
 				<td id="R11C1">+35 Bouns</td>
-				<td id="R11C2"></td>
-				<td id="R11C3"></td>
+				<td align="center" id="R11C2">
+          <span class="bonus bonus_turn">0/63</span>
+        </td>
+				<td align="center" id="R11C3">
+          <span class="bonus">0/63</span>
+        </td>
 			</tr>
 			<tr>
 				<td colspan="3"></td>
 			</tr>
 			<tr>
 				<td>Choice</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="fakevalue turn"></span>
+          <span class="realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="fakevalue hidden"></span>
+          <span class="realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td colspan="3"></td>
 			</tr>
 			<tr>
 				<td>4 of a Kind</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="fakevalue turn"></span>
+          <span class="realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="fakevalue hidden"></span>
+          <span class="realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td>Full House</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="fakevalue turn"></span>
+          <span class="realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="fakevalue hidden"></span>
+          <span class="realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td>S.Straight</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="fakevalue turn"></span>
+          <span class="realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="fakevalue hidden"></span>
+          <span class="realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td>L.Straight</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="fakevalue turn"></span>
+          <span class="realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="fakevalue hidden"></span>
+          <span class="realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td>Yacht</td>
-				<td></td>
-				<td></td>
+				<td align="center" class="turn_color">
+          <span class="fakevalue turn"></span>
+          <span class="realvalue"></span>
+        </td>
+				<td align="center">
+          <span class="fakevalue hidden"></span>
+          <span class="realvalue"></span>
+        </td>
 			</tr>
 			<tr>
 				<td colspan="3"></td>
 			</tr>
 			<tr>
 				<td id="R18C1">Total</td>
-				<td id="R18C2"></td>
-				<td id="R18C3"></td>
+				<td align="center" id="R18C2" class="total total_turn">0</td>
+				<td align="center" id="R18C3" class="total">0</td>
 			</tr>
 		</table>
 
@@ -116,6 +192,7 @@
 			<div class="savedDices">
 			</div>
 		</div>
+    <button id="finishBtn">finish</button>
 
 		<div class="dicesform">
 			<div class="randomDices">
@@ -127,6 +204,5 @@
   </div>
 
 <script src="dice.js"></script>
-<script src="table.js"></script>
 </body>
 </html>

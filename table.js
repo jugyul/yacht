@@ -1,2 +1,0 @@
-const finishedDices = []
-const saved
