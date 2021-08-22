@@ -18,6 +18,7 @@
   height: 53rem;
   border-radius: 30%;
   background: #EAF7EB;
+  border: outset rgb(218, 235, 220) 0.3rem;
   position: absolute;
   z-index: -1;
   left: 0rem;
@@ -28,16 +29,141 @@
   height: 53rem;
   border-radius: 30%;
   background: #FFB7BC;
+  border: outset rgb(253, 199, 203) 0.3rem;
   position: absolute;
   z-index: -1;
   right: 0rem;
 }
 
+.controller-minus{
+  width: 2.5rem;
+  height: 2.5rem;
+  clip-path: polygon(0 33%, 100% 33%, 100% 66%, 0 66%);
+  background: black;
+  border: 0.1rem rgb(59, 59, 59) outset;
+  position: absolute;
+  top: 3rem;
+  left: 9rem;
+}
+
+.controller-plus{
+  width: 2.5rem;
+  height: 2.5rem;
+  clip-path: polygon(0 33%, 33% 33%, 33% 0, 66% 0, 66% 33%, 100% 33%, 100% 66%, 66% 66%, 66% 100%, 33% 100%, 33% 66%, 0 66%);
+  background: black;
+  border: 0.1rem rgb(59, 59, 59) outset;
+  position: absolute;
+  top: 3rem;
+  right: 9rem;
+}
+
+.controller-circle{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(31, 31, 31);
+  border: black ridge 0.5rem;
+}
+
+.controller-1 .controller-circle{
+  top: 9rem;
+  left: 3rem;
+}
+
+.controller-2 .controller-circle{
+  top: 25rem;
+  right: 3rem;
+}
+
+.controller-buttons{
+  width: 9rem;
+  height: 9rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+    ". a ."
+    "b . d"
+    ". c .";
+}
+
+.controller-1 .controller-buttons{
+  background: #EAF7EB;
+  position: relative;
+  top: 23rem;
+  left: 1.5rem;
+}
+
+.controller-2 .controller-buttons{
+  background: #FFB7BC;
+  position: relative;
+  top: 7rem;
+  right: -8.5rem;
+}
+
+.controller-button{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: black;
+  border-radius: 50%;
+  color: ghostwhite;
+  text-align: center;
+  line-height: 2.1rem;
+  font-style: normal;
+  font-size: 1.3rem;
+  border: rgb(59, 59, 59) outset 0.3rem;
+}
+
+.controller-button:nth-child(1){
+  grid-area: a;
+}
+
+.controller-button:nth-child(2){
+  grid-area: b;
+}
+
+.controller-button:nth-child(3){
+  grid-area: c;
+}
+
+.controller-button:nth-child(4){
+  grid-area: d;
+}
+
+.controller-square {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: black;
+  border: 0.3rem rgb(59, 59, 59) outset;
+  position: absolute;
+  top: 36rem;
+  left: 8rem;
+}
+
+.controller-small-circle{
+  width: 2.5rem;
+  height: 2.5rem;
+  background: black;
+  border-radius: 50%;
+  border: 0.3rem rgb(59, 59, 59) outset;
+  position: absolute;
+  top: 36rem;
+  right: 8.5rem;
+}
+
+
 .bezel{
   border: 1.5rem solid rgb(41, 41, 41);
   width: 95rem;
-  
+  background-color: black;
 }
+
+
+
+
 
 .screen{
   background: ivory;
