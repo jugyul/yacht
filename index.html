@@ -1,208 +1,383 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>yacht</title>
-	<link rel="stylesheet" href="dicestyle.css">
-	<link rel="stylesheet" href="tablestyle.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link rel="stylesheet" href="animation.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div id="tableForm">
-		<table border="1px" bgcolor="white">
-			<tr align="center">
-				<td>Turn</td>
-				<td rowspan="3">player1</td>
-				<td rowspan="3">player2</td>
-			</tr>
-			<tr>
-				<th>1/12</th>
-			</tr>
-			<tr>
-				<td align="center">Categories</td>
-			</tr>
-			<tr>
-				<td>Aces</td>
-				<td align="center" class="turn_color">
-					<span class="subvalue fakevalue turn" id="R4C2"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="subvalue fakevalue hidden" id="R4C3"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td>Deuces</td>
-				<td align="center" class="turn_color">
-          <span class="subvalue fakevalue turn" id="R5C2"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="subvalue fakevalue hidden" id="R5C3"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td>Threes</td>
-				<td align="center" class="turn_color">
-          <span class="subvalue fakevalue turn" id="R6C2"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="subvalue fakevalue hidden" id="R6C3"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td>Fours</td>
-				<td align="center" class="turn_color">
-          <span class="subvalue fakevalue turn" id="R7C2"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="subvalue fakevalue hidden" id="R7C3"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td>Fives</td>
-				<td align="center" class="turn_color">
-          <span class="subvalue fakevalue turn" id="R8C2"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="subvalue fakevalue hidden" id="R8C3"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td>Sixes</td>
-				<td align="center" class="turn_color">
-          <span class="subvalue fakevalue turn" id="R9C2"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="subvalue fakevalue hidden" id="R9C3"></span>
-          <span class="subvalue realvalue"></span>
-        </td>
-			</tr>
-			<tr id="R10">
-				<td id="R10C1" align="center" height="20px">Subtotal</td>
-				<td align="center" class="subtotal_turn subtotal" id="R10C2">0</td>
-				<td align="center" class="subtotal" id="R10C3">0</td>
-			</tr>
-			<tr id="R11">
-				<td id="R11C1">+35 Bouns</td>
-				<td align="center" id="R11C2">
-          <span class="bonus bonus_turn">0/63</span>
-        </td>
-				<td align="center" id="R11C3">
-          <span class="bonus">0/63</span>
-        </td>
-			</tr>
-			<tr>
-				<td colspan="3"></td>
-			</tr>
-			<tr>
-				<td>Choice</td>
-				<td align="center" class="turn_color">
-          <span class="fakevalue turn"></span>
-          <span class="realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="fakevalue hidden"></span>
-          <span class="realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td colspan="3"></td>
-			</tr>
-			<tr>
-				<td>4 of a Kind</td>
-				<td align="center" class="turn_color">
-          <span class="fakevalue turn"></span>
-          <span class="realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="fakevalue hidden"></span>
-          <span class="realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td>Full House</td>
-				<td align="center" class="turn_color">
-          <span class="fakevalue turn"></span>
-          <span class="realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="fakevalue hidden"></span>
-          <span class="realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td>S.Straight</td>
-				<td align="center" class="turn_color">
-          <span class="fakevalue turn"></span>
-          <span class="realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="fakevalue hidden"></span>
-          <span class="realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td>L.Straight</td>
-				<td align="center" class="turn_color">
-          <span class="fakevalue turn"></span>
-          <span class="realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="fakevalue hidden"></span>
-          <span class="realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td>Yacht</td>
-				<td align="center" class="turn_color">
-          <span class="fakevalue turn"></span>
-          <span class="realvalue"></span>
-        </td>
-				<td align="center">
-          <span class="fakevalue hidden"></span>
-          <span class="realvalue"></span>
-        </td>
-			</tr>
-			<tr>
-				<td colspan="3"></td>
-			</tr>
-			<tr>
-				<td id="R18C1">Total</td>
-				<td align="center" id="R18C2" class="total total_turn">0</td>
-				<td align="center" id="R18C3" class="total">0</td>
-			</tr>
-		</table>
+	<div class="switch">
+		<div class="controller-1"></div>
+		<div class="controller-2"></div>
+		<div class="bezel">
 
-	</div>
+			<div class="screen">
 
-	<div id="dices">
-		<div class="dicesform">
-			<div class="savedDices">
-			</div>
-		</div>
-    <button id="finishBtn">finish</button>
-
-		<div class="dicesform">
-			<div class="randomDices">
-				<div class="trialOfRolling">
+				<div class="rope-1">
+					<div class="pin pin-1"></div>
+					<div class="pin pin-2"></div>
+					<div class="pin pin-3"></div>
 				</div>
-			</div>
-		</div>
-		<button id="rollBtn">roll</button>
-  </div>
 
-<script src="dice.js"></script>
+				<div class="rope-2">
+					<div class="hider"></div>
+					<div class="tape"></div>
+				</div>
+
+				<div class="memo memo1">
+					<div>
+						<div class="dice">
+							<div class="pip tiny-pip"></div>
+						</div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="dice">
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+						</div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="dice">
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+						</div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="dice">
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+						</div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="dice">
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+						</div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="dice">
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+							<div class="pip tiny-pip"></div>
+						</div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="subvalue fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+				</div>
+
+				<div class="memo memo2 ">
+					<div>
+						<div class="dice square-container ">
+							<div class="pip square "></div>
+							<div class="pip square "></div>
+							<div class="pip square "></div>
+							<div class="pip square "></div>
+							<div class="pip square "></div>
+						</div>
+					</div>
+					<div>
+						<div class="fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="dice square-container ">
+							<div class="pip square "></div>
+							<div class="pip square "></div>
+							<div class="pip square "></div>
+							<div class="pip square "></div>
+						</div>
+					</div>
+					<div>
+						<div class="fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="dice square-container ">
+							<div class="pip square "></div>
+							<div class="pip square-2 "></div>
+							<div class="pip square "></div>
+							<div class="pip square-2 "></div>
+							<div class="pip square-2 "></div>
+						</div>
+					</div>
+					<div>
+						<div class="fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="dice square-container ">
+							<div class="pip square "></div>
+							<div class="pip square "></div>
+							<div class="pip square "></div>
+						</div>
+					</div>
+					<div>
+						<div class="fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="dice square-container ">
+							<div class="pip square-2 "></div>
+							<div class="pip square-2 "></div>
+							<div class="pip square-2 "></div>
+						</div>
+					</div>
+					<div>
+						<div class="fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="dice square-container ">
+							<div class="pip square-2 "></div>
+							<div class="pip square-2 "></div>
+							<div class="pip square-2 "></div>
+							<div class="pip square-2 "></div>
+							<div class="pip square-2 "></div>
+						</div>
+					</div>
+					<div>
+						<div class="fakevalue turn"></div>
+						<div class="realvalue"></div>
+					</div>
+					<div>
+						<div class="fakevalue"></div>
+						<div class="realvalue"></div>
+					</div>
+				</div>
+				<div class="tip-above"></div>
+				<div class="tip-below"></div>
+
+				<div class="memo3">
+					<div class="turn-text">Turn</div>
+					<div class="turn-number">1/12</div>
+				</div>
+
+				<div class="memo4-component">
+					<div class="pin pin-4"></div>
+					<div class="subtotal-memo">
+						<div>Subtotal</div>
+						<div>
+							<div class="subtotal subtotal-turn">0/63</div>
+							<div class="subtotal">0/63</div>
+						</div>
+					</div>
+					<div class="ring-component">
+						<div class="ring"></div>
+						<div class="ring"></div>
+					</div>
+					<div class="total-memo">
+						<div>Total</div>
+						<div>
+							<div class="total total-turn">0</div>
+							<div class="total">0</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="shelf-conponent-1">
+					<div class="save-zone ">
+						<div class="save-space "></div>
+						<div class="save-space "></div>
+						<div class="save-space "></div>
+						<div class="save-space "></div>
+						<div class="save-space "></div>
+					</div>
+					<div class="shelf "></div>
+					<div class="below-shelf ">
+						<div class="shadow "></div>
+						<div class="stand "></div>
+						<div class="shadow "></div>
+						<div class="stand "></div>
+						<div class="shadow "></div>
+					</div>
+				</div>
+
+				<div class="shelf-conponent-2">
+					<div class="over-shelf">
+						<div class="cactus-pot">
+							<div class="cactus">
+								<div class="eyes"></div>
+								<div class="eyes"></div>
+							</div>
+							<div class="pot"></div>
+						</div>
+					</div>
+					<div class="shelf "></div>
+					<div class="below-shelf ">
+						<div class="shadow "></div>
+						<div class="stand "></div>
+						<div class="shadow "></div>
+						<div class="stand "></div>
+						<div class="shadow "></div>
+					</div>
+				</div>
+
+				<div class="desk-conponent ">
+					<div class="rolling-zone ">
+
+						<div class="move-left move-left1 ">
+							<div class="rotate rotate1 ">
+								<div class="tip-rotate tip-rotate1 ">
+									<div class="random-dice ">
+										<span class="pip big-pip"></span>
+                </div>
+			        </div>
+		        </div>
+    	    </div>
+          
+          <div class="move-left move-left2 ">
+		        <div class="rotate rotate2 ">
+			        <div class="tip-rotate tip-rotate2 ">
+					      <div class="random-dice ">
+                  <span class="pip big-pip"></span>
+                  <span class="pip big-pip"></span>
+                </div>
+			        </div>
+		        </div>
+    	    </div>
+
+          <div class="move-left move-left3 ">
+		        <div class="rotate rotate3 ">
+			        <div class="tip-rotate tip-rotate3 ">
+					      <div class="random-dice ">
+                  <span class="pip big-pip"></span>
+                  <span class="pip big-pip"></span>
+                  <span class="pip big-pip"></span>
+                </div>
+			        </div>
+		        </div>
+    	    </div>
+
+          <div class="move-left move-left4 ">
+		        <div class="rotate rotate4 ">
+			        <div class="tip-rotate tip-rotate4 ">
+					      <div class="random-dice ">
+                  <span class="pip big-pip"></span>
+                  <span class="pip big-pip"></span>
+                  <span class="pip big-pip"></span>
+                  <span class="pip big-pip"></span>
+                </div>
+			        </div>
+		        </div>
+    	    </div>
+
+          <div class="move-left move-left5 ">
+		        <div class="rotate rotate5 ">
+			        <div class="tip-rotate tip-rotate5 ">
+					      <div class="random-dice ">
+                  <span class="pip big-pip"></span>
+                  <span class="pip big-pip"></span>
+                  <span class="pip big-pip"></span>
+                  <span class="pip big-pip"></span>
+                  <span class="pip big-pip"></span>
+                </div>
+			        </div>
+		        </div>
+    	    </div>
+          
+      	</div>
+        <div class="desk "></div>
+        <div class="below-desk "></div>
+      </div>
+
+      <div class="btn-interface">
+        <div class="roll-count">
+          <div>0</div>
+        </div>
+        <div class="rollbtn">
+          <span>roll<span>
+        </div>
+      </div>
+
+      <div class="dudung">
+        <div class="dudung-text hidden"></div>
+      </div>
+
+    </div>
+    
+  </div>
+  </div>
+	<script src="script.js "></script>
+  
 </body>
+
 </html>

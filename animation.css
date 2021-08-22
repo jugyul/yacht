@@ -1,0 +1,221 @@
+.dudung{
+  animation: dudung 0.5s both ease;
+}
+
+.eyes{
+  background: black;
+  width: 0.25rem;
+  height: 0.05rem;
+  animation: eyes 1s ease;
+}
+
+.move-left1{
+  animation: move-left1 1.6s  both ease-out;
+}
+
+.move-left2{
+  animation: move-left2 1.9s 0.3s both ease-out;
+}
+
+.move-left3{
+  animation: move-left3 2.2s 0.6s  both ease-out;
+}
+
+.move-left4{
+  animation: move-left4 2.5s 0.9s  both ease-out;
+}
+
+.move-left5{
+  animation: move-left5 2.8s 1.2s  both ease-out;
+}
+
+.rotate{
+  transform-origin: center;
+  width: 6rem;
+  height: 6rem;
+  transform: rotate(-45deg);
+}
+
+.rotate1 {
+  animation: rotate1 1.6s both ease-out;
+}
+
+.rotate2 {
+  animation: rotate2 1.9s 0.3s both ease-out;
+}
+
+.rotate3 {
+  animation: rotate3 2.2s 0.6s both ease-out;
+}
+
+.rotate4 {
+  animation: rotate4 2.5s 0.9s both ease-out;
+}
+
+.rotate5 {
+  animation: rotate5 2.8s 1.2s both ease-out;
+}
+
+.tip-rotate{
+  width: 6rem;
+  height: 6rem;
+  transform-origin: 0% 100%;
+}
+.tip-rotate1{
+  animation: tip-rotate1 1.6s both ease-in-out;
+}
+
+.tip-rotate2{
+  animation: tip-rotate2 1.9s 0.3s both ease-in-out;
+}
+
+.tip-rotate3{
+  animation: tip-rotate3 2.2s 0.6s both ease-in-out;
+}
+
+.tip-rotate4{
+  animation: tip-rotate4 2.5s 0.9s both ease-in-out;
+}
+
+.tip-rotate5{
+  animation: tip-rotate5 2.8s 1.2s both ease-in-out;
+}
+
+@keyframes dudung{
+  from{
+    transform: scale(4);
+    opacity: 0%;
+  }
+  to{
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+
+@keyframes eyes {
+  50%{transform: scaleY(5);
+  border-radius: 50%;}
+
+}
+
+@keyframes move-left1{
+  from{
+    transform: translateX(60rem)
+  }
+  to{transform: translateX(5rem)}
+}
+
+@keyframes move-left2{
+  from{
+    transform: translateX(60rem)
+  }
+  to{transform: translateX(10rem)}
+}
+
+@keyframes move-left3{
+  from{
+    transform: translateX(60rem)
+  }
+  to{transform: translateX(15rem)}
+}
+
+@keyframes move-left4{
+  from{
+    transform: translateX(60rem)
+  }
+  to{transform: translateX(20rem)}
+}
+
+@keyframes move-left5{
+  from{
+    transform: translateX(60rem)
+  }
+  to{transform: translateX(25rem)}
+}
+
+
+@keyframes rotate1 {
+  0%{
+    transform: rotate(0deg)
+  }
+  90%, 100%{
+    transform: rotate(-1125deg)
+  }
+}
+
+@keyframes rotate2 {
+  0%{
+    transform: rotate(0deg)
+  }
+  90%, 100%{
+    transform: rotate(-1125deg)
+  }
+}
+
+@keyframes rotate3 {
+  0%{
+    transform: rotate(0deg)
+  }
+  90%, 100%{
+    transform: rotate(-765deg)
+  }
+}
+
+@keyframes rotate4 {
+  0%{
+    transform: rotate(0deg)
+  }
+  90%, 100%{
+    transform: rotate(-405deg)
+  }
+}
+
+@keyframes rotate5 {
+  0%{
+    transform: rotate(0deg)
+  }
+  90%, 100%{
+    transform: rotate(-405deg)
+  }
+}
+
+
+@keyframes tip-rotate1{
+  0%,
+  80%{
+    transform: rotate(0deg)
+  }
+  100%{transform: rotate(-45deg)}
+}
+
+@keyframes tip-rotate2{
+  0%,
+  80%{
+    transform: rotate(0deg)
+  }
+  100%{transform: rotate(-45deg)}
+}
+
+@keyframes tip-rotate3{
+  0%,
+  80%{
+    transform: rotate(0deg)
+  }
+  100%{transform: rotate(-45deg)}
+}
+
+@keyframes tip-rotate4{
+  0%,
+  80%{
+    transform: rotate(0deg)
+  }
+  100%{transform: rotate(-45deg)}
+}
+
+@keyframes tip-rotate5{
+  0%,
+  80%{
+    transform: rotate(0deg)
+  }
+  100%{transform: rotate(-45deg)}
+}
